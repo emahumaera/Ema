@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+    int x, y, a, b, c;
+    string pilihan;
+    cout<<"============== PROGRAM PENGOPERASIAN =============="<<endl<<endl;
+    cout<<"Nilai X : ";
+    cin>>x;
+    cout<<"Nilai Y : ";
+    cin>>y;
+    cout<<endl;
+    cout<<"Pilih Pengoperasian (Penjumlahan/Pengurangan/Perkalian) : ";
+    cin>>pilihan;
+    cout<<endl;
+    if(pilihan == "penjumlahan"){
+            a = x+y;
+        cout<<"Hasil Dari Penjumlahan Adalah : "<<a<<endl;
+    }else if (pilihan == "pengurangan") {
+            b = x-y;
+        cout<<"Hasil Dari Pengurangan Adalah : "<<b<<endl;
+    }else if (pilihan == "perkalian") {
+            c = x*y;
+        cout<<"Hasil Dari Perkalian Adalah : "<<c<<endl;
+    }else {
+        cout<<"Tidak Memilih atau Pilihan Salah"<<endl;
+    }
+    return 0;
+}
