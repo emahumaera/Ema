@@ -1,0 +1,44 @@
+#include <iostream>
+#include <conio.h>
+#include <stdlib.h>
+using namespace std;
+
+int main () {
+     unsigned int pilihan;
+     cout << "MENU PILIHAN" << endl;
+     cout << "------------" << endl;
+     cout << "1. hitung luas lingkaran" << endl;
+     cout << "2. hitung luas segitiga" << endl;
+
+     cout << "------------" << endl;
+     while (pilihan>=0){
+     cout << "pilihan anda (1/2)         : "; cin >> pilihan;
+     if (pilihan== 1) {
+     cout << "-------------------------------------"<< endl;
+     cout << "Menghitung Luas Lingkaran" << endl;
+     float r;
+     cout << "Masukan jari-jari            : "; cin >> r;
+     float Ll = 3.14*r*r;
+     cout << "Luas Lingkaran               : " << Ll << endl;
+     cout << "-------------------------------------"<< endl;
+      }
+
+     else if (pilihan== 2){
+     cout << "-------------------------------------"<< endl;
+     cout << "Menghitung Luas Segitiga" << endl;
+     float a;
+     cout << "Masukan Alas                 : "; cin >> a;
+     float t;
+     cout << "Masukan Tinggi               : "; cin >> t;
+     float Ls = 0.5*a*t;
+     cout << "Luas Segitiga                : " << Ls << endl;
+     cout << "-------------------------------------"<< endl;
+      }
+
+     else {
+     cout << "Kode Yang Anda Masukan Salah...!!!"<< endl;
+      }
+      }
+
+    getch();
+}
